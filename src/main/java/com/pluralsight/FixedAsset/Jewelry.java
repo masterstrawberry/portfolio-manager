@@ -1,9 +1,9 @@
-package com.pluralsight.finance.FixedAsset;
+package com.pluralsight.FixedAsset;
 
 public class Jewelry extends FixedAsset {
     double karat;
 
-    public Jewelry(String name, double karat) {
+    public Jewelry(double karat) {
         this.karat = karat;
     }
 

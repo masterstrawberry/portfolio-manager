@@ -1,4 +1,26 @@
 package com.pluralsight.finance;
 
-public class BankAccount {
+public class BankAccount implements Valuable {
+    String name;
+    String accountNumber;
+    double balance;
+
+    public BankAccount(String accountNumber, String name, double balance) {
+        this.name = name;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    public void withdraw(double amount) {
+        balance -= amount;
+    }
+
+    public double getValue() {
+        return balance;
+    }
+
 }

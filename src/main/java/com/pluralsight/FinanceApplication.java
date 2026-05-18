@@ -1,9 +1,12 @@
 package com.pluralsight;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    static void main() {
+import com.pluralsight.finance.BankAccount;
+import com.pluralsight.finance.Valuable;
 
+public class FinanceApplication {
+    static void main() {
+        BankAccount account1 = new BankAccount("123", "Pam", 12500);
+        Valuable account2 = new BankAccount("456", "Gary", 1500);
+        account1.deposit(100);
     }
 }

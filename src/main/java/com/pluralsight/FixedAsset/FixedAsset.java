@@ -1,4 +1,4 @@
-package com.pluralsight.finance.FixedAsset;
+package com.pluralsight.FixedAsset;
 
 import com.pluralsight.finance.Valuable;
 
